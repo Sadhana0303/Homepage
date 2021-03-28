@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <body>
+          <meta charset="UTF-8">
+          <meta http-equiv="X-UA-Compatible" content="IE=edge">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <link rel="stylesheet" href="feedstyle.css">
+            <style>
+    
+    footer{
+    text-align:center;
+    font-family:BELL MT;
+    font-size:20px;
+    background-color: black;
+    padding:0.5%;
+    color:white;
+  }
+
+  </style>
+
+
+<script>
+          
+  function myFunction() 
+  {
+    var fname = document.getElementById("FIRST NAME").value;
+    var mname= document.getElementById("MIDDLE NAME").value;
+    var lname= document.getElementById("LAST NAME").value;
+    var gender=document.querySelector('input[name="GENDER"]:checked').value;
+    var suggestion=document.getElementById("SUGGESTION").value;
+    var final=document.getElementById("YOUR SUGGESTIONS").value;
+    var fullname
+    if (fname == "")
+    {
+      alert("Please enter your first name");
+    }
+    else if(lname == "")
+    {
+      alert("Please enter your last name");
+    }
+    else if(suggestion == "")
+    {
+      alert("Please enter your suggestions");
+    }
+    else if(fname.length>40||mname.length>40||lname.length>40)
+    {
+      alert("Please enter your name in 40 character");
+    }
+    else{
+   if(mname.trim()==" ")
+         { fullname=gender+" "+fname.trim() +" "+ lname.trim()+" ";
+       }   else
+          {fullname=gender+" "+fname.trim() +" "+ mname.trim() +" "+ lname.trim()+" ";
+      }
+
+    final +="\n"+"Name      :  "+fullname+"\n"+"Suggestion: "+suggestion+"\n";
+
+   document.getElementById("YOUR SUGGESTIONS").innerHTML= final;
+  }}
+
+ 
+
+  function reset()
+  {
+    document.getElementById("FIRST NAME").reset();
+    document.getElementById("MIDDLE NAME").reset();
+    document.getElementById("LAST NAME").reset();
+    document.querySelector('input[name="GENDER"]:checked').checked = false;
+    document.getElementById("SUGGESTION").reset();
+  }
+
+</script>
+              
+  </body>
+    </head>
+    <header><section><pre class="tab"><p  style="background-color: black; padding:40px; color:white; font-size: 30px; font-family: BELL MT;">FEEDBACK                                                                                                                       YOUR THOUGHT MATTERS</p>
+       </section>
+    </header>
+    <section class="left" >
+      <form action="feedbackpage.html" onsubmit="return false">
+        <pre><b>
+ <label for="FIRST NAME" style="font-family: Bell MT;">FIRST NAME</label>      <input type="text" name="FIRST NAME" id="FIRST NAME" maxlength="40" placeholder="First"><br>
+
+ <label for="MIDDLE NAME" style="font-family: Bell MT;">MIDDLE NAME</label>    <input type="text" name="MIDDLE NAME" id="MIDDLE NAME" maxlength="40" placeholder="Middle"><br>
+
+ <label for="LAST NAME" style="font-family: Bell MT;">LAST NAME</label>       <input type="text" name="LAST NAME" id="LAST NAME" maxlength="40" placeholder="Last"><br>
+
+ <label for="SUGGESTION" style="font-family: Bell MT;">SUGGESTION</label>     <input type="text" name="SUGGESTION" id="SUGGESTION" maxlength="100" placeholder="Feedback"><br>
+
+ <label for="gender" style="font-family: Bell MT;">GENDER</label>        <input type="radio" name="GENDER" value="Mr." ><label style="font-family: Bell MT;">MALE </label><input type="radio" name="GENDER" value="Miss." ><label style="font-family: Bell MT;">FEMALE</label>
+  
+
+           <button type="button" onclick="myFunction()">+</button>      <button type="button" onclick="reset()">-</button>
+       </b> </pre>
+    </section>
+    <section class ="right">
+      <pre><b>
+        <form action="feedbackpage.html" onsubmit="return false">
+          
+        <label for="YOUR SUGGESTIONS" style="font-family: BELL MT;">YOUR SUGGESTIONS</label><br><br>         
+         <textarea type ="text" name="SUGGESTION" id="YOUR SUGGESTIONS" cols="110" rows="15"></textarea>
+
+      
+    </b></pre>
+  
+  
+  </form>
+    </section>
+    
+        
+      
+       
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+ <footer>Copyright2021<br>Developed By Sadhana Gavhade</footer>
+</body>
+   
+    
+</html>

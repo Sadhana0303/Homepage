@@ -1,0 +1,54 @@
+
+body{
+    
+    background-image: url(https://previews.123rf.com/images/sonyakamoz/sonyakamoz1804/sonyakamoz180400007/99183341-spring-floral-background-texture-wallpaper-flat-lay-of-white-almond-blossom-flowers-and-petals-over-.jpg);
+    background-repeat: no-repeat;
+    height: 700px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+
+}
+
+div{
+  
+    background-color: blanchedalmond;
+      padding: 2px;
+  }
+  .left{
+      height: 265px;
+      width: 28.33%;
+      padding-top: 10%;
+      padding-bottom: 10%;
+      left: 0;
+      border: solid black 2px;
+      position: fixed;
+      z-index: 1;
+      top: 0;
+      overflow-x: hidden;
+      margin-top: 8%;
+      margin-bottom: 30%;
+      margin-left: 5%;
+      margin-right: 5%;
+      font-size: 17px;
+  }
+  .right{
+      height:265px;
+      width: 61.33%;
+      padding-top: 10%;
+      padding-bottom: 10%;
+      right: 0;
+      border: solid black 2px;
+      position: fixed;
+      z-index: 1;
+      top: 0;
+      overflow-x: hidden;
+      margin-top: 8%;
+      margin-bottom: 30%;
+      margin-left: 5%;
+      margin-right: 5%;
+  }
+  button{
+      font-size: large;
+  }

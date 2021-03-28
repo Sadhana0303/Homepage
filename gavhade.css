@@ -1,0 +1,36 @@
+header{
+    font-family:cursive;
+    font-size: 50px;
+    color:rgb(235, 235, 53);
+    text-align: center;
+}
+
+footer{
+    font-family:cursive;
+    font-size: 20px;
+    color:rgb(235, 235, 53);
+    text-align: center;
+}
+
+body{
+    background-image: url(https://cdn.hipwallpaper.com/i/17/55/0SkZDr.jpg);
+    background-repeat: no-repeat;
+    height: 700px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+p{
+    font-size: 30px;
+    font-family:cursive ;
+    color:rgb(235, 235, 53);
+}
+
+a:link, a:visited {
+    color: white;
+    
+  }
+  
+  
